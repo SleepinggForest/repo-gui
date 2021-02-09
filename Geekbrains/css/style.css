@@ -39,6 +39,8 @@ body {
 
 .promoimg {
     height: 765px;
+    width: 800px;
+    background-image: url(../img/Rectangle.png);
 }
 
 .proimg {
@@ -66,22 +68,26 @@ body {
     display: flex;
 }
 
-.slider-text {
+.slidertitle {
+    font-size: 48px;
     padding-left: 16px;
-    width: 380px;
     font-family: Lato;
     font-weight: 900;
-    font-size: 30px;
-    line-height: 10px;
-    height: 92px;
+    line-height: 30px;
+    margin-top: 10px;
 }
 
-.slidertitle {
-    font-size: 45px;
+.slidertext {
+    font-size: 30px;
 }
 
 .redtext {
     color: #F16D7F;
+}
+
+.textborder {
+    height: 80px;
+    width: 12px;
 }
 
 .offer-block {
@@ -188,6 +194,8 @@ a {
     width: 100%;
     height: 420px;
     opacity: 0;
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -224,41 +232,8 @@ a {
 .productsimg1 {
     width: 100%;
     height: 420px;
-    background-image: url(../img/Image1.png);
-
+    margin-bottom: -5px;
 }
-
-.productsimg2 {
-    width: 100%;
-    height: 420px;
-    background-image: url(../img/Image2.png);
-}
-
-.productsimg3 {
-    width: 100%;
-    height: 420px;
-    background-image: url(../img/Image3.png);
-}
-
-.productsimg4 {
-    width: 100%;
-    height: 420px;
-    background-image: url(../img/Image4.png);
-}
-
-.productsimg5 {
-    width: 100%;
-    height: 420px;
-    background-image: url(../img/Image5.png);
-}
-
-.productsimg6 {
-    width: 100%;
-    height: 420px;
-    background-image: url(../img/Image6.png);
-}
-
-
 
 .productstext {
     width: 100%;
@@ -295,7 +270,8 @@ a {
 .button-block {
     width: 100%;
     margin-top: 48px;
-    margin-left: -315px;
+    display: flex;
+    justify-content: center;
 }
 
 .button {
@@ -317,7 +293,7 @@ a {
 .feature-block {
     background: #222224;
     height: 341px;
-    margin-top: 200px;
+    margin-top: 95px;
 }
 
 .featureall {
@@ -430,6 +406,11 @@ a {
     margin-left: 80px;
     border-radius: 25px 0px 0px 25px;
     background-color: #E1E1E1;
+    padding-left: 20px;
+    font-family: Lato;
+    font-size: 14px;
+    color: #222224;
+    opacity: 0.67;
 }
 
 .butsub {
@@ -439,6 +420,8 @@ a {
     border-radius: 0px 25px 25px 0px;
     background-color: #F16D7F;
     color: white;
+    font-family: Lato;
+    font-size: 14px;
 }
 
 .butsub:active {
@@ -448,6 +431,8 @@ a {
     border-radius: 0px 25px 25px 0px;
     background-color: white;
     color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
 }
 
 .footer {
@@ -479,6 +464,109 @@ a {
     padding: 5px;
 }
 
-.link-icon2 {
+.link-icon:hover {
     background-color: #F16D7F;
+}
+
+.nav-catalog {
+    height: 148px;
+    width: 100%;
+    background-color: #F8F3F4;
+}
+
+.bread-text {
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.bread-adress {
+    font-family: Lato;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #636363;
+}
+
+.bread-adress-active {
+    color: #F16D7F;
+}
+
+
+.products-catalog {
+    height: 1804px;
+    margin-top: inherit;
+}
+
+.nav-catalog-selection {
+    height: 148px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-block {
+    height: 100px;
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sorting {
+    display: flex;
+    width: 305px;
+    justify-content: space-between;
+}
+
+.sorting-button {
+    border: none;
+    background: none;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.pagination-button,
+.filter-button {
+    border: none;
+    background: none;
+    font-family: Lato;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px
+}
+
+.pagination-button {
+    padding-top: 3px;
+}
+
+.sorting-vector {
+    margin-left: 10px;
+}
+
+.catalog-button-block {
+    width: 284px;
+    height: 44px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 425px;
+    margin-top: 48px;
+}
+
+.pagination {
+    font-family: Lato;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+color: #EBEBEB;
+}
+
+.pagination-active {
+color: #EF5B70;
 }
